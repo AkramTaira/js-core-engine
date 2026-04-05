@@ -1,0 +1,63 @@
+/* Simple dashboard styling */
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --hash: #22c55e;
+  --array: #ef4444;
+  --accent: #38bdf8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 24px;
+}
+
+h1 {
+  margin: 0 0 6px 0;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 16px;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.05rem;
+  color: var(--accent);
+}
+
+.bar {
+  height: 20px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.bar.hash { background: var(--hash); }
+.bar.array { background: var(--array); }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}

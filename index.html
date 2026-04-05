@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The JS Core Engine</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <h1>The JS Core Engine</h1>
+  <p class="subtitle">Performance + Reactivity + Async Simulation Dashboard</p>
+
+  <!-- Performance -->
+  <div class="card">
+    <h2>Performance Profiling</h2>
+    <div class="row">
+      <span>Array Search Time</span>
+      <strong id="arrayTime">-</strong>
+    </div>
+    <div class="bar array" id="arrayBar"></div>
+
+    <div class="row">
+      <span>HashTable Time</span>
+      <strong id="hashTime">-</strong>
+    </div>
+    <div class="bar hash" id="hashBar"></div>
+
+    <div class="row">
+      <span>Efficiency Gain</span>
+      <strong id="efficiency">-</strong>
+    </div>
+
+    <p class="note" id="perfNote">-</p>
+  </div>
+
+  <!-- State Management -->
+  <div class="card">
+    <h2>State Management</h2>
+    <div class="row">
+      <span>Last State Update</span>
+      <strong id="lastState">-</strong>
+    </div>
+    <p class="note">State is updated automatically using Proxy + Observer Pattern.</p>
+  </div>
+
+  <!-- Async Engine -->
+  <div class="card">
+    <h2>Async Engine</h2>
+    <div class="row">
+      <span>Last Request Time</span>
+      <strong id="asyncTime">-</strong>
+    </div>
+    <div class="row">
+      <span>Request Status</span>
+      <strong id="asyncStatus">-</strong>
+    </div>
+    <p class="note">Network calls are simulated with random latency.</p>
+  </div>
+
+  <script type="module" src="./src/App.js"></script>
+</body>
+</html>
